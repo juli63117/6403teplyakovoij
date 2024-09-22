@@ -43,7 +43,7 @@ def parse_arguments() -> argparse.Namespace:
     
     return parser.parse_args()
 
-if __name__ == "__main__":
+def main():
     # Загрузка данных
     args = parse_arguments()
     config = read_config(args.config)
@@ -58,3 +58,6 @@ if __name__ == "__main__":
 
     # Вычисление уравнения (в радианах)
     y(n0, h, nk, a, b, c)
+
+if __name__ == "__main__":
+    main()

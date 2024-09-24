@@ -49,7 +49,7 @@ def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Вычисление значений уравнения")
 
     parser.add_argument('--config', type=str, help='Путь к конфигурационному CSV файлу')
-    parser.add_argument('--output', type=str, default='output.txt', help='Путь к выходному файлу для записи результатов')
+    parser.add_argument('--output', type=str, default='result.txt', help='Путь к выходному файлу для записи результатов')
 
     parser.add_argument('--n0', type=int, help='Начальное значение диапазона', required=False)
     parser.add_argument('--h', type=float, help='Шаг', required=False)

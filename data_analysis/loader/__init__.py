@@ -1,0 +1,1 @@
+from loader.trends_data_loader import GoogleTrendsLoader
